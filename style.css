@@ -1,13 +1,11 @@
-/* Updated header styling with stronger specificity */
 /* Stronger and clearer header styling */
-table#csvTable > thead > tr > th {
-  background-color: #007bff !important; /* Bright blue */
-  color: #ffffff !important;            /* Bright white font */
+table#csvTable.display > thead > tr > th {
+  background-color: #007bff !important;
+  color: #ffffff !important;
   font-weight: bold !important;
   text-shadow: none !important;
-  border-bottom: 2px solid #0056b3;     /* Optional: subtle bottom border */
+  border-bottom: 2px solid #0056b3;
 }
-
 
 /* Main wrapper styles */
 .responsive-table-wrapper {
