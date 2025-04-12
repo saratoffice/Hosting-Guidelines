@@ -1,3 +1,11 @@
+/* Updated header styling with stronger specificity */
+#csvTable thead > tr > th {
+  background-color: #101535 !important;
+  color: #FF0000 !important;
+  font-weight: bold !important;
+  text-shadow: none !important;
+}
+
 
 /* Main wrapper styles */
 .responsive-table-wrapper {
@@ -15,14 +23,6 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 14px;
   border-collapse: collapse;
-}
-
-/* Updated header styling with stronger specificity */
-#csvTable thead > tr > th {
-  background-color: #101535 !important;
-  color: #FF0000 !important;
-  font-weight: bold !important;
-  text-shadow: none !important;
 }
 
 
