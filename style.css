@@ -19,8 +19,8 @@
 
 /* Updated header styling with stronger specificity */
 #csvTable thead > tr > th {
-  background-color: #8300E9 !important;
-  color: #ffffff !important;
+  background-color: #101535 !important;
+  color: #FF0000 !important;
   font-weight: bold !important;
   text-shadow: none !important;
 }
