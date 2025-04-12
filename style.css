@@ -1,0 +1,114 @@
+
+/* Main wrapper styles */
+.responsive-table-wrapper {
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* DataTable styles */
+#csvTable {
+  width: 100%;
+  background: white;
+  color: black;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 14px;
+  border-collapse: collapse;
+}
+
+/* Navy blue header */
+* Updated header styling */
+#csvTable thead th {
+  background-color: #8300E9 !important;
+  color: #ffffff !important;
+  font-weight: bold;
+  border: none !important;
+}
+
+/* Remove any existing text shadows */
+#csvTable thead th,
+#csvTable thead tr {
+  text-shadow: none !important;
+}
+
+
+#csvTable th, #csvTable td {
+  padding: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+/* Align download button to the right */
+#csvTable td:last-child {
+  text-align: right;
+}
+
+/* Download button style */
+.download-btn,
+td a button {
+  padding: 6px 14px;
+  background-color: #007bff;
+  color: #ffffff !important;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.download-btn:hover,
+td a button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.4);
+}
+
+/* Search input box wider */
+.dataTables_filter input {
+  width: 300px !important;
+  max-width: 100%;
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Responsive tweaks for small screens */
+@media only screen and (max-width: 768px) {
+  #csvTable, #csvTable thead, #csvTable tbody, #csvTable th, #csvTable td, #csvTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  #csvTable thead {
+    display: none;
+  }
+
+  #csvTable tr {
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 10px;
+    background: #fff;
+  }
+
+  #csvTable td {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 10px;
+    font-size: 13px;
+    text-align: left !important;
+  }
+
+  #csvTable td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #555;
+    flex: 1;
+    margin-right: 10px;
+  }
+
+  #csvTable td:last-child {
+    justify-content: flex-end;
+  }
+}
