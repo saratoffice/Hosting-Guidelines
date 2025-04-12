@@ -25,12 +25,6 @@
   text-shadow: none !important;
 }
 
-/* Make sure the parent row doesn't override styles */
-#csvTable thead > tr {
-  background-color: transparent !important;
-  text-shadow: none !important;
-}
-
 
 #csvTable th, #csvTable td {
   padding: 10px;
