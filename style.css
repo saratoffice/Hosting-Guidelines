@@ -17,18 +17,18 @@
   border-collapse: collapse;
 }
 
-/* Navy blue header */
-* Updated header styling */
-#csvTable thead th {
+/* Updated header styling with stronger specificity */
+#csvTable thead > tr > th {
   background-color: #8300E9 !important;
   color: #ffffff !important;
-  font-weight: bold;
+  font-weight: bold !important;
   border: none !important;
+  text-shadow: none !important;
 }
 
-/* Remove any existing text shadows */
-#csvTable thead th,
-#csvTable thead tr {
+/* Make sure the parent row doesn't override styles */
+#csvTable thead > tr {
+  background-color: transparent !important;
   text-shadow: none !important;
 }
 
