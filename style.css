@@ -1,10 +1,10 @@
 /* Stronger and clearer header styling */
 table#csvTable thead th {
-  background-color: #007bff ;
-  color: #ffffff ;
-  font-weight: bold ;
-  text-shadow: none ;
-  border-bottom: 2px solid #0056b3 ;
+  background-color: #e615ed; /* Updated header background */
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: none;
+  border-bottom: 2px solid #b20bb3;
 }
 
 /* Sorting arrow color */
@@ -39,6 +39,11 @@ table#csvTable thead th.sorting_desc:after {
   text-align: left;
 }
 
+/* Row hover background */
+#csvTable tbody tr:hover {
+  background-color: #8cfa64;
+}
+
 /* Align download button to the right */
 #csvTable td:last-child {
   text-align: right;
@@ -57,11 +62,12 @@ td a button {
   cursor: pointer;
 }
 
+/* Button hover effect */
 .download-btn:hover,
 td a button:hover {
-  background-color: #61fc28;
+  background-color: #e615ed !important; /* Updated hover color */
   transform: translateY(-2px);
-  box-shadow: 0 3px 10px rgba(0, 123, 255, 0.4);
+  box-shadow: 0 3px 10px rgba(230, 21, 237, 0.4);
 }
 
 /* Search input box wider */
@@ -112,7 +118,3 @@ td a button:hover {
     justify-content: flex-end;
   }
 }
-#csvTable.display tbody tr:hover {
-  background-color: #ffe6f0 !important;
-}
-
