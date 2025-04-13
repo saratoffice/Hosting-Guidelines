@@ -56,6 +56,10 @@ td a button {
   transition: background 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
+#csvTable tbody tr:hover {
+  background-color: #ffe6f0 !important; /* Light pink */
+}
+
 
 .download-btn:hover,
 td a button:hover {
