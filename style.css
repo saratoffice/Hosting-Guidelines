@@ -1,3 +1,11 @@
+/* Stronger and clearer header styling */
+table#csvTable thead th {
+  background-color: #007bff ;
+  color: #ffffff ;
+  font-weight: bold ;
+  text-shadow: none ;
+  border-bottom: 2px solid #0056b3 ;
+}
 
 /* Sorting arrow color */
 table#csvTable thead th.sorting:after,
