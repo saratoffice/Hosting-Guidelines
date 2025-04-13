@@ -112,7 +112,7 @@ td a button:hover {
     justify-content: flex-end;
   }
 }
-/* Highlight row on hover */
-#csvTable tbody tr:hover {
+#csvTable.display tbody tr:hover {
   background-color: #ffe6f0 !important;
 }
+
