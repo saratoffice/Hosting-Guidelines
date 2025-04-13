@@ -59,7 +59,7 @@ td a button {
 
 .download-btn:hover,
 td a button:hover {
-  background-color: #0056b3;
+  background-color: #61fc28;
   transform: translateY(-2px);
   box-shadow: 0 3px 10px rgba(0, 123, 255, 0.4);
 }
