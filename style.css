@@ -1,18 +1,26 @@
 /* Stronger and clearer header styling */
-table#csvTable.display > thead > tr > th {
+table#csvTable thead th {
   background-color: #007bff !important;
   color: #ffffff !important;
   font-weight: bold !important;
   text-shadow: none !important;
-  border-bottom: 2px solid #0056b3;
+  border-bottom: 2px solid #0056b3 !important;
 }
 
-/* Main wrapper styles */
-.responsive-table-wrapper {
-  background-color: #ffffff;
-  color: #000000;
-  padding: 10px;
-  border-radius: 8px;
+/* Sorting arrow color */
+table#csvTable thead th.sorting:after,
+table#csvTable thead th.sorting_asc:after,
+table#csvTable thead th.sorting_desc:after {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+
+/* Show entries dropdown wider */
+.dataTables_length select {
+  width: 120px !important;
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
 }
 
 /* DataTable styles */
@@ -24,7 +32,6 @@ table#csvTable.display > thead > tr > th {
   font-size: 14px;
   border-collapse: collapse;
 }
-
 
 #csvTable th, #csvTable td {
   padding: 10px;
