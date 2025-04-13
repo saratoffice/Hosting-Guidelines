@@ -56,10 +56,6 @@ td a button {
   transition: background 0.3s ease, transform 0.3s ease;
   cursor: pointer;
 }
-#csvTable tbody tr:hover {
-  background-color: #ffe6f0 !important; /* Light pink */
-}
-
 
 .download-btn:hover,
 td a button:hover {
@@ -111,6 +107,11 @@ td a button:hover {
     flex: 1;
     margin-right: 10px;
   }
+  /* Highlight row on hover */
+#csvTable tbody tr:hover {
+  background-color: #ffe6f0 !important;
+}
+
 
   #csvTable td:last-child {
     justify-content: flex-end;
